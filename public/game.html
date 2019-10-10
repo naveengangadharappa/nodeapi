@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> my first angular</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+    </script>
+    <script src="/angular/app.js"></script>
+</head>
+<body ng-app="mygame" ng-controller="mycontrol">
+<center><div><h1>{{demo}}</h1><hr></hr></div><br><br>
+<div class="maindiv">
+    <div> Gusses left   :  {{gusses}} </div><br>
+    <div>Incorrect Gusses Made : <spam ng-repeat="letter in incorrectletterschoosen" >{{letter}}</spam> </div><br>
+    <div>Correct Gusses Made  : <spam ng-repeat="letter in correctletterschoosen" >{{letter}}</spam> </div><br>
+    <div> You have to guss this word : {{displayword}}</div><br>
+    <div>
+        Enter your gussing letter <input type="text" name="letter" ng-model="input.letter">
+        <button ng-click="letterchoosen()">Submit</button>
+        <br><br>
+        <div> Hint : {{hintname}}</div><br>
+    </div>
+    <a href="index.html">HOME page</a>
+    <h2>{{msg}}</h2>
+</div>
+</center>
+</body>
+</html>

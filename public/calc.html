@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> my first angular</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+    </script>
+    <script src="/angular/calculator.js"></script>
+    <style type="text/css">
+    .text_box{
+        background-color:darkgray;
+        width:25%;
+        height:10%;
+        border: 2px solid #000044;
+        padding:3px;  
+    }
+    </style>
+</head>
+<body ng-app="mycalculator" ng-controller="mycalccontrol">
+<center><div><h1>{{demo}}</h1><hr></hr></div><br><br>
+</center>
+<div>
+        Enter Expression <input type="text" name="letter" ng-model="input">
+        <button ng-click="res()">Submit</button>
+        <br><br>
+        <div class="text_box"><center><b>Result : </b>{{result}}</center></div><br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+    <head>
+            <style type="text/css">
+                a{
+                    background-color:darkolivegreen;
+                    color:white;
+                    padding:2%;
+                    text-decoration-style: none;
+                    font-style: none;
+                }
+                a:hover{
+                    background-color:cadetblue;   
+                }
+                input,select{
+            padding: 4px;
+            background-color:whitesmoke;
+            border-radius: 2px;
+            border-bottom-color: black;
+            border-top-style: none;
+            border-left-style: none;
+            border-right-style: none;
+            width:20%;
+        }
+        .navbar{
+            width:100%;
+            background-color:darkolivegreen;
+            padding-right:2%;
+            padding-top:2%;
+            padding-bottom:2%;
+        }
+        table{
+        width:90%;
+    }
+    th{
+        padding:1%;
+        background-color: darkolivegreen;
+    }
+    td{
+        padding:1%;
+        background-color:silver;
+    }
+    
+                </style>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js">
+            </script>
+            <script src="/angular/disp.js"></script>
+            <link href="/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+<body ng-app="dispusers" ng-controller="mycontroldisp">
+        <center><h2>Welcome to My First Angular Application</h2></center><hr></hr>
+        <div class="navbar"><a href="calc.html">CALCULATOR</a><a href="game.html">GAMES</a><a href="dispusers.html">Users</a><a href="insert.html">Signup</a><a href="http://www.google.co.in">Google</a><input type="text" name="username" ng-model="uname"/><button ng-click="search()">Search</button></div>
+<table >
+    <thead >  
+        <tr>
+            <th>Profile</th>
+            <th>User-Name</th>
+            <th>User-Gender</th>
+            <th>User-D-O-B</th>
+            <th>User-email</th>
+            <th>User-Address</th>
+            <th>Edit/delete</th>
+        </tr>
+    </thead>
+    <tbody >
+        <tr ng-repeat="d in data">
+         <td><div><a href='/pictures/{{d.email}}.jpg' style="background-color:grey;"><img ng-src='/pictures/{{d.email}}.jpg' style="width:200px;height:100px;"></a></td>
+         <td>{{d.username}}</td>
+         <td>{{d.gender}}</td>
+         <td>{{d.dob}}</td> 
+         <td>{{d.email}}</td>
+         <td>{{d.country}}, {{d.state}}, {{d.district}}, {{d.postal}}</td> 
+         <td> <button ng-click="update(d)"><b>Edit</b></button><a href="/delete/{{d.email}}" onclick="return confirm('Are you shure to delete this user ??');" ><b>Delete</b></a></td> 
+        </tr>
+    </tbody> 
+</table>
+</body>
+</html>

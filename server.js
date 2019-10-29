@@ -9,7 +9,7 @@ const bodyparser=require('body-parser');
 app.use(bodyparser.json());
 
 const path=require('path');
-const userctrls=require('./userctrl');
+const controller=require('./controller');
 
 app.use(bodyparser.urlencoded({
     extended:true
@@ -18,4 +18,4 @@ app.listen(3000,()=>{
     console.log("Express server started at port : 3000");
 });
 
-app.use('/',userctrls);
+app.use('/',controller);

@@ -1,0 +1,39 @@
+{
+    "data":
+    [{
+      "name":"naveen",
+      "gender":"male",
+      "dob":"18-01-1998",
+      "email":"gnaveenkumar18.ng@gmail.com",
+      "country":"India",
+      "state":"Karnataka",
+      "district":"Bangalore",
+      "pin":"560073",
+      "passwd":"123"
+    },
+    {
+        "name":"books",
+        "gender":"male",
+        "dob":"18-01-1998",
+        "email":"booksdealingsystem@gmail.com",
+        "country":"India",
+        "state":"Karnataka",
+        "district":"Bangalore",
+        "pin":"560073",
+        "passwd":"123"
+    },
+    {
+        "name":"naveen esds",
+        "gender":"male",
+        "dob":"18-01-1998",
+        "email":"naveen.g@esds.co.in",
+        "country":"India",
+        "state":"Karnataka",
+        "district":"Bangalore",
+        "pin":"560073",
+        "passwd":"123"
+    }
+    ]
+  } 
+   
+    

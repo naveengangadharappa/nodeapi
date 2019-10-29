@@ -1,0 +1,14 @@
+{
+    "data":
+    [{
+      "username":"naveen g",
+      "gender":"female",
+      "dob":"18-01-1998",
+      "email":"gnaveenkumar18.ng@gmail.com",
+      "country":"India",
+      "state":"Karnataka",
+      "district":"Bangalore",
+      "postal":"560073",
+      "password":"123"
+    }]
+}
